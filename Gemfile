@@ -41,6 +41,7 @@ gem "tzinfo-data"
 gem 'haml', '~> 5.2', '>= 5.2.2'
 gem 'simple_form', '~> 5.1'
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
+gem 'pry', '~> 0.14.1'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
