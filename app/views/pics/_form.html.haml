@@ -1,0 +1,14 @@
+= simple_form_for @pic, html: { multipart: true } do |f|
+  - if @pic.errors.any?
+    #errors
+      %ul 
+        - @pic.errors.full_message.each do |msg|
+          %li= msg
+        end
+        
+  .form_group
+    = f.input :tittle, input_html: { class: "from-control" }
+  .form_group
+  = f.input :description, input_html: { class: "from-control" }
+
+  = f.button :submit, class: "btn btn-primary"
