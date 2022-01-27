@@ -5,7 +5,8 @@
         - @pic.errors.full_message.each do |msg|
           %li= msg
         end
-        
+  .form_group
+    = f.file_field :image, input_html: { class: "from-control" }
   .form_group
     = f.input :tittle, input_html: { class: "from-control" }
   .form_group
